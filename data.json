@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "nextUserId": 7,
+    "nextProviderProfileId": 5,
+    "nextBookingId": 7,
+    "nextReviewId": 1,
+    "nextNotificationId": 4
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Ravi Electric Works",
+      "email": "ravi.electrician@example.com",
+      "phone": "9876543210",
+      "passwordHash": "$2a$10$jQ6oQhiRdKHCi30J3e9gZeJgrQ53Lyxi8jQYyMQrnKO/Prhm1DQ7C",
+      "role": "provider",
+      "createdAt": "2026-04-22T11:55:11.525Z"
+    },
+    {
+      "id": 2,
+      "name": "Mohan Plumbing Services",
+      "email": "mohan.plumber@example.com",
+      "phone": "9123456780",
+      "passwordHash": "$2a$10$1r44RkUK3.ecljGZmH1J0eVs4/7jIYtycnyv.8KVnTWh5HXcft8fy",
+      "role": "provider",
+      "createdAt": "2026-04-22T11:55:11.607Z"
+    },
+    {
+      "id": 3,
+      "name": "GreenLeaf Gardener",
+      "email": "greenleaf.gardener@example.com",
+      "phone": "9988776655",
+      "passwordHash": "$2a$10$y4h6pqBYoWNusiBG3Jk9.e4XolMcqMKaXGqr14bMTTF9bk1gMf/pq",
+      "role": "provider",
+      "createdAt": "2026-04-22T11:55:11.680Z"
+    },
+    {
+      "id": 4,
+      "name": "robin",
+      "email": "robinhood@customer.com",
+      "phone": "8987654567",
+      "passwordHash": "$2a$10$khozsnY5Rg2nq4XQtKwUnuVWtluZpLajXUq8lLv6kSMPLYwusWPoi",
+      "role": "customer",
+      "createdAt": "2026-04-22T11:58:20.066Z"
+    },
+    {
+      "id": 5,
+      "name": "System Admin",
+      "email": "admin@household.local",
+      "phone": "9000000000",
+      "passwordHash": "$2a$10$bKEKREDdGEyE99hOoCevveyQX2oWvi1FcnwmoM6oYlQ7jYuU15eNO",
+      "role": "admin",
+      "createdAt": "2026-04-22T12:42:27.036Z"
+    },
+    {
+      "id": 6,
+      "name": "Rahul Gokhale",
+      "email": "rahulabcc@gmail.com",
+      "phone": "9045621358",
+      "passwordHash": "$2a$10$5Jsci/hYWbTEXmu9FBd9Y.yOEjNA9S/4gzmICfKwS/GMmrl0ikCcu",
+      "role": "provider",
+      "createdAt": "2026-04-23T10:29:39.740Z"
+    }
+  ],
+  "providerProfiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "serviceCategory": "Electrician",
+      "experienceYears": 6,
+      "hourlyRate": 500,
+      "workStart": "08:00",
+      "workEnd": "18:00",
+      "paymentModes": [
+        "Cash",
+        "UPI",
+        "Card"
+      ],
+      "availableNow": true
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "serviceCategory": "Plumber",
+      "experienceYears": 8,
+      "hourlyRate": 450,
+      "workStart": "09:00",
+      "workEnd": "20:00",
+      "paymentModes": [
+        "Cash",
+        "UPI",
+        "Bank Transfer"
+      ],
+      "availableNow": true
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "serviceCategory": "Gardener",
+      "experienceYears": 4,
+      "hourlyRate": 350,
+      "workStart": "07:00",
+      "workEnd": "16:00",
+      "paymentModes": [
+        "Cash",
+        "UPI"
+      ],
+      "availableNow": false
+    },
+    {
+      "id": 4,
+      "userId": 6,
+      "serviceCategory": "Cook",
+      "experienceYears": 2,
+      "hourlyRate": 290,
+      "workStart": "09:00",
+      "workEnd": "18:00",
+      "paymentModes": [],
+      "availableNow": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "customerId": 4,
+      "providerId": 2,
+      "serviceDate": "2026-04-23",
+      "serviceTime": "19:31",
+      "address": "clement town",
+      "paymentMode": "Cash",
+      "notes": "",
+      "status": "Pending",
+      "createdAt": "2026-04-22T11:59:21.645Z",
+      "acceptedAt": null,
+      "completionDueAt": null,
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    },
+    {
+      "id": 2,
+      "customerId": 4,
+      "providerId": 1,
+      "serviceDate": "2026-04-24",
+      "serviceTime": "20:34",
+      "address": "turner road",
+      "paymentMode": "UPI",
+      "notes": "",
+      "status": "Completed",
+      "createdAt": "2026-04-22T12:01:25.491Z",
+      "acceptedAt": null,
+      "completionDueAt": null,
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    },
+    {
+      "id": 3,
+      "customerId": 4,
+      "providerId": 6,
+      "serviceDate": "2026-04-23",
+      "serviceTime": "16:12",
+      "address": "clement town",
+      "paymentMode": "UPI",
+      "notes": "plz come fast",
+      "status": "Cancelled",
+      "createdAt": "2026-04-23T10:40:40.375Z",
+      "acceptedAt": null,
+      "completionDueAt": null,
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    },
+    {
+      "id": 4,
+      "customerId": 4,
+      "providerId": 1,
+      "serviceDate": "2026-04-23",
+      "serviceTime": "16:37",
+      "address": "bdejcjdjdwcjc",
+      "paymentMode": "Cash",
+      "notes": "",
+      "status": "Cancelled",
+      "createdAt": "2026-04-23T11:04:32.461Z",
+      "acceptedAt": null,
+      "completionDueAt": null,
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    },
+    {
+      "id": 5,
+      "customerId": 4,
+      "providerId": 1,
+      "serviceDate": "2026-05-02",
+      "serviceTime": "11:29",
+      "address": "ngfXsd",
+      "paymentMode": "Cash",
+      "notes": "",
+      "status": "Completed",
+      "createdAt": "2026-05-02T05:58:35.764Z",
+      "acceptedAt": null,
+      "completionDueAt": null,
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    },
+    {
+      "id": 6,
+      "customerId": 4,
+      "providerId": 1,
+      "serviceDate": "2026-05-16",
+      "serviceTime": "14:38",
+      "address": "post office",
+      "paymentMode": "Card",
+      "notes": "",
+      "status": "Completed",
+      "createdAt": "2026-05-02T06:08:22.517Z",
+      "acceptedAt": "2026-05-02T06:24:01.824Z",
+      "completionDueAt": "2026-05-04T06:24:01.824Z",
+      "completionOtp": null,
+      "completionOtpExpiresAt": null
+    }
+  ],
+  "reviews": [],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 4,
+      "bookingId": 6,
+      "message": "Ravi Electric Works accepted your booking #6 (2026-05-16 14:38).",
+      "read": false,
+      "createdAt": "2026-05-02T06:24:01.824Z"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "bookingId": 6,
+      "message": "Ravi Electric Works requested completion for booking #6. OTP: 835031 (valid 15 min). Share this code with the provider only after the work is done.",
+      "read": false,
+      "createdAt": "2026-05-02T06:24:26.305Z"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "bookingId": 6,
+      "message": "Your booking #6 has been marked completed.",
+      "read": false,
+      "createdAt": "2026-05-02T06:27:00.799Z"
+    }
+  ]
+}
